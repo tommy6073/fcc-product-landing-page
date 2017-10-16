@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  background-color: #eeeeee;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 12px;
+  background-color: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 410px;
+}
+
+#header-img {
+  width: 100px;
+  height: 100px;
+}
+
+#nav-bar {
+  margin-left: auto;
+  width: 40%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  padding-left: 8px;
+  width: 300px;
+  height: 20px;
+}
+
+#submit {
+  margin: 10px auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1c40f;
+  border-radius: 2px;
+  border-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#features {
+  padding: 0 12px;
+}
+.feature {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.feature-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.feature-title {
+  margin: 0;
+}
+
+.feature-description {
+  margin: 0;
+}
+
+#how-it-works {
+  margin: 80px auto;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  width: 280px;
+  border: solid 1px #000000;
+}
+
+.price-title {
+  background-color: #dddddd;
+  text-align: center;
+}
+
+.price-description {
+  text-align: center;
+}
+
+.select {
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #f1c40f;
+  border-radius: 2px;
+  border-color: transparent;
+  font-size: 18px;
+}
+
+footer {
+  padding: 0 12px;
+  border: 1px #dddddd solid;
+  background-color: #dddddd;
+  text-align: right;
+}
+
+@media (max-width: 750px) {
+  main {
+    margin-top: 135px;
+  }
+
+  ul {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  li {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 910px) {
+  #pricing {
+    flex-direction: column;
+  }
+
+  .price {
+    margin-top: 10px;
+  }
+}
